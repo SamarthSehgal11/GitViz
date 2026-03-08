@@ -1,5 +1,6 @@
 # GitViz
 A GitHub repository history visualizer built with React and D3.js
+
 Live- https://gitviz-alpha.vercel.app/
 
 [![React](https://img.shields.io/badge/React-18.x-blue?style=flat-square)](https://react.dev)
