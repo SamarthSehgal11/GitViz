@@ -5,11 +5,11 @@
 ![D3.js](https://img.shields.io/badge/D3.js-v7-f9a03c?style=flat-square&logo=d3.js)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square&logo=tailwindcss)
 
-**GitViz** is a real-time, aesthetically driven React application that transforms public GitHub repository data into beautiful, interactive visual insights. Built with **D3.js v7** and styled with a premium "Dark Cosmos" glassmorphism UI, it provides deep analysis without requiring any authentication.
+**GitViz** is a real-time, aesthetically driven React application that transforms public GitHub repository data into beautiful, interactive visual insights. Built with **D3.js v7** and styled with a premium glassmorphism UI, it provides deep analysis without requiring any authentication.
 
 ## ✨ Features
 
-- **🌠 Dark Cosmos UI:** A stunning, space-themed aesthetic featuring canvas particle backgrounds, deep `#050709` tones, glowing neon accents, and smooth cinematic transitions.
+- **🌠 Premium UI:** A stunning, space-themed aesthetic featuring canvas particle backgrounds, deep `#050709` tones, glowing neon accents, and smooth cinematic transitions.
 - **📈 Commit Timeline:** Interactive SVG timeline mapping the density (additions/deletions) of a repository's history, complete with a pulsating activity ring on the latest node and native floating zoom controls.
 - **🥇 Top Contributors:** Staggered, linear-gradient D3 bar charts visualizing the top 10 contributors, embedding their GitHub avatars and calculating percentage impacts dynamically.
 - **🔥 Activity Heatmap:** A classic GitHub-style 52-week commit density heatmap, matched exactly to the official dark mode color palette with reactive CSS scaling bounds on hover.
