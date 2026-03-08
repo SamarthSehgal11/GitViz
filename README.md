@@ -17,7 +17,6 @@ GitViz transforms raw repository data into interactive visual insights. It queri
 - Top contributors ranked by commit count
 - Activity heatmap showing the last 52 weeks of commits
 - Repo metadata: stars, forks, open issues, primary language
-- Dark theme with smooth animations
 
 ## Tech Stack
 | Technology | Purpose |
@@ -42,14 +41,6 @@ Paste a full public GitHub repository URL into the search input and click Visual
 ## Limitations
 The standard GitHub API configuration limits unauthenticated requests to 60 per hour. Currently, only public repositories are supported, and the visualizer maps the 100 most recent chronologically ordered commits of the target branch.
 
-## Roadmap
-- [x] Commit timeline
-- [x] Contributors chart
-- [x] Activity heatmap
-- [ ] GitHub token support for higher rate limits
-- [ ] Branch selector
-- [ ] Export charts as PNG
-- [ ] Compare two repositories
 
 ## Contributing
 Fork the repository, create a feature branch, and submit a pull request with your proposed changes.
@@ -61,8 +52,7 @@ git push origin feature/your-feature-name
 ```
 
 ## Author
-Samarth Sehgal  
-3rd Year B.Tech CSE Student  
+Samarth Sehgal   
 Samarthsehgal19@gmail.com  
 github.com/SamarthSehgal11  
 Open to internship and collaboration opportunities.  
