@@ -1,63 +1,71 @@
-# 🌌 GitViz - GitHub History Visualizer
+# GitViz
+A GitHub repository history visualizer built with React and D3.js
 
-![GitViz Preview](https://img.shields.io/badge/UI-Dark_Cosmos-0c0f14?style=flat-square&logo=react&logoColor=58a6ff)
-![React](https://img.shields.io/badge/React-18.x-61dafb?style=flat-square&logo=react)
-![D3.js](https://img.shields.io/badge/D3.js-v7-f9a03c?style=flat-square&logo=d3.js)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square&logo=tailwindcss)
+[![React](https://img.shields.io/badge/React-18.x-blue?style=flat-square)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-Build_Tool-purple?style=flat-square)](https://vitejs.dev)
+[![D3](https://img.shields.io/badge/D3.js-v7-orange?style=flat-square)](https://d3js.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
 
-**GitViz** is a real-time, aesthetically driven React application that transforms public GitHub repository data into beautiful, interactive visual insights. Built with **D3.js v7** and styled with a premium glassmorphism UI, it provides deep analysis without requiring any authentication.
+![GitViz](./preview.png)
 
-## ✨ Features
+## Overview
+GitViz transforms raw repository data into interactive visual insights. It queries the public GitHub REST API to render commit timelines, contributor rankings, and 52-week activity heatmaps natively in the browser. 
 
-- **🌠 Premium UI:** A stunning, space-themed aesthetic featuring canvas particle backgrounds, deep `#050709` tones, glowing neon accents, and smooth cinematic transitions.
-- **📈 Commit Timeline:** Interactive SVG timeline mapping the density (additions/deletions) of a repository's history, complete with a pulsating activity ring on the latest node and native floating zoom controls.
-- **🥇 Top Contributors:** Staggered, linear-gradient D3 bar charts visualizing the top 10 contributors, embedding their GitHub avatars and calculating percentage impacts dynamically.
-- **🔥 Activity Heatmap:** A classic GitHub-style 52-week commit density heatmap, matched exactly to the official dark mode color palette with reactive CSS scaling bounds on hover.
-- **🚀 Zero Auth Required:** Directly queries the public GitHub REST API. Just paste a repository URL (e.g., `facebook/react`) and visualize.
+## Features
+- Search any public GitHub repository by URL or owner/repo shorthand
+- Interactive commit timeline with zoom and pan
+- Top contributors ranked by commit count
+- Activity heatmap showing the last 52 weeks of commits
+- Repo metadata: stars, forks, open issues, primary language
+- Dark theme with smooth animations
 
-## 🛠️ Tech Stack
+## Tech Stack
+| Technology | Purpose |
+| ---------- | ------- |
+| React 18 | UI framework |
+| Vite | Build tool |
+| D3.js v7 | Data visualizations |
+| GitHub REST API | Data source |
 
-- **Frontend:** React 18, Vite
-- **Data Visualization:** D3.js (v7)
-- **Styling:** Tailwind CSS, Vanilla CSS Variables (`index.css`), Glassmorphism
-- **Icons:** Lucide React
-- **Data:** GitHub REST API
+## Getting Started
 
-## 💻 Getting Started
-
-### Prerequisites
-Make sure you have Node.js (v20+) installed on your machine.
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/SamarthSehgal11/GitViz.git
-cd GitViz
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/SamarthSehgal11/gitviz.git
+cd gitviz
 npm install
-```
-
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`.
+## Usage
+Paste a full public GitHub repository URL into the search input and click Visualize to generate the charts. The system also accepts the standard owner/repo shorthand (e.g., facebook/react). 
 
-## 🎨 Design System
+## Limitations
+The standard GitHub API configuration limits unauthenticated requests to 60 per hour. Currently, only public repositories are supported, and the visualizer maps the 100 most recent chronologically ordered commits of the target branch.
 
-GitViz utilizes a strict `Space Grotesk` (Display) and `JetBrains Mono` (Monospace) typography hierarchy. All UI components heavily leverage CSS `backdrop-filter: blur(12px)` for premium glass card aesthetics, avoiding flat generic colors in favor of `--accent-blue` (`#58a6ff`) and `--accent-purple` (`#bc8cff`) gradients.
+## Roadmap
+- [x] Commit timeline
+- [x] Contributors chart
+- [x] Activity heatmap
+- [ ] GitHub token support for higher rate limits
+- [ ] Branch selector
+- [ ] Export charts as PNG
+- [ ] Compare two repositories
 
-## 👨‍💻 Author
+## Contributing
+Fork the repository, create a feature branch, and submit a pull request with your proposed changes.
 
-**Samarth Sehgal**  
-*Computer Science Engineer · Web Developer*  
-- [GitHub Profile](https://github.com/SamarthSehgal11)
-- Contact: Samarthsehgal19@gmail.com
+```bash
+git checkout -b feature/your-feature-name
+git commit -m "feat: add your feature"
+git push origin feature/your-feature-name
+```
 
----
-*Built with ❤️ for data visualization and beautiful interfaces.*
+## Author
+Samarth Sehgal  
+3rd Year B.Tech CSE Student  
+Samarthsehgal19@gmail.com  
+github.com/SamarthSehgal11  
+Open to internship and collaboration opportunities.  
+
+## License
+MIT
